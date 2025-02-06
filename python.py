@@ -100,7 +100,13 @@ print(countString(userInput))
 
 # a. Write a program in Python that stores a list of fruits and prints each fruit using a loop.
 
-fruits = ['orange', 'apple', 'strawberry', 'durian', "pinapple", "watermelon"]
+fruits = []
+while True:
+    addFruit = input("Enter a fruit (type x to end): ")
+    if addFruit.lower() == "x":
+        break
+    else:
+        fruits.append(addFruit)
 
 for i in fruits:
     print(i)
