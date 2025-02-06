@@ -1,5 +1,5 @@
 # Challenge 1:
-'''
+
 # a. Write a program in Python that checks if a number is even or odd.
 
 num = input("Enter a number: ")
@@ -15,7 +15,7 @@ elif num % 2 != 0:
 voteAge = input("How old are you?: ")
 voteAge = int(voteAge)
 
-if voteAge > 18: #
+if voteAge > 18: 
     print("You are the legal age to vote.")
 else:
     print("You are not old enough to vote.")
@@ -31,11 +31,11 @@ elif checkNum > 0:
     print("Your number is positive.")
 elif checkNum < 0:
     print("Your number is negative.")
-'''
+
 
 
 # Challenge 2:
-'''
+
 # a. Write a program in Python that prints numbers from 1 to 10 using a for loop.
 
 for x in range(1, 11):
@@ -54,10 +54,10 @@ i = int(input("Enter a number: "))
 for x in range(1, i):
     i *= x
 print(i)
-'''
+
 
 # Challenge 3:
-'''
+
 # a. Write a function in Python that greets a user by name.
 
 askName = input("Enter your name: ")
@@ -91,10 +91,10 @@ def countString(string):
     for i in string:
         if i in vowels:
             result += 1
-    return string #
+    return string 
 
 print(countString(userInput))
-'''
+
 
 # Challenge 4:
 
@@ -107,8 +107,17 @@ for i in fruits:
 
 # b. Write a program in Python that stores student names and their grades in a dictionary, and prints each student's name and grade.
 
-# MAKE IT DICTOIONARY
-students = ['Bianca', 'Angel', 'Marcus', 'Maddie']
-grades = ['96', '56', '31', '100']
+studentsGrades = {'Bianca' : 96, 'Angel' : 56, 'Marcus' : 31, 'Maddie' : 100}
+for i, x in studentsGrades.items():
+    print(f"Name: {i}, Grade: {x}")
 
 # c. Create an array of numbers in Python and write a function to find the highest number in the array.
+
+numArray = [[1, 2, 3, 4], [25, 50, 75, 100], [4, 8, 16, 32]]
+
+for x in numArray:
+    highest = 0 
+    for y in x:
+        if y > highest:
+            highest = y
+print(highest)
